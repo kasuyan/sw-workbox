@@ -1,0 +1,36 @@
+{
+  "name": "dentaku-react",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "repository": "https://github.com/kasuyan/dentaku-react.git",
+  "author": "kasuyan <kasuya725@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint-fix": "eslint --fix ./src",
+    "start":
+      "webpack-dev-server --hot --inline --history-api-fallback --mode development --open",
+    "dev": "webpack --watch --mode development",
+    "build": "webpack --mode production && gh-pages -d dist/"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "file-loader": "^1.1.11",
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.15.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1"
+  }
+}
