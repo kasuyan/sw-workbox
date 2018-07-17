@@ -17,6 +17,8 @@ importScripts(
   "/js/precache-manifest.09ab147b2b865cc8a44f3645d0905c82.js"
 );
 
+workbox.core.setCacheNameDetails({prefix: "shachiku-chan"});
+
 workbox.skipWaiting();
 workbox.clientsClaim();
 
@@ -29,4 +31,4 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/https:\/\/hacker-news.firebaseio.com/, workbox.strategies.staleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/\/image\//, workbox.strategies.cacheFirst(), 'GET');
