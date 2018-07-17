@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "hogejs/precache-manifest.5ab21a628d90735883b633756ea75084.js"
+  "./hogejs/precache-manifest.61ca9ed220dcb3844ee8639a79f4a9d6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "shachiku-chan"});
