@@ -11,7 +11,8 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+importScripts("./js/workbox-v3.4.1/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "./js/workbox-v3.4.1"});
 
 importScripts(
   "./js/precache-manifest.7dd716bb76052ff0c48e6b054ecb9f2d.js"
